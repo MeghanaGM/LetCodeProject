@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">CRM Automation Test Suite</th></tr>
+<tr><td><a href="#t0">Regression Test Classes</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">114,324</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CRM Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test Classes &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m0">customerLinkClickTest</a></td><td rowspan="1">1624944365147</td><td rowspan="1">10092</td></tr><tr><th colspan="4">Regression Test Classes &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.crm.qa.testcases.HomePageTest</td><td><a href="#m1">VerifyHomePageTitleTest</a></td><td rowspan="1">1624944313129</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m2">contactIconClickTest</a></td><td rowspan="1">1624944344030</td><td rowspan="1">5165</td></tr><tr class="passedeven"><td><a href="#m3">hmaberugButtonClickTest</a></td><td rowspan="1">1624944329412</td><td rowspan="1">168</td></tr><tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m4">ValidateLogoTest</a></td><td rowspan="1">1624944275266</td><td rowspan="1">96</td></tr><tr class="passedodd"><td><a href="#m5">loginTest</a></td><td rowspan="1">1624944283551</td><td rowspan="1">13458</td></tr><tr class="passedodd"><td><a href="#m6">validateLoginPageTitleTest</a></td><td rowspan="1">1624944267108</td><td rowspan="1">27</td></tr></tbody>
+</table>
+<h2>Regression Test Classes</h2><h3 id="m0">com.crm.qa.testcases.HomePageTest#customerLinkClickTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.114)
+Build info: version: &apos;4.0.0-beta-4&apos;, revision: &apos;29f46d02dd&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.43.90&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [80a1dc46b28934e3da2da9886376cd7b, clickElement {id=2e9a8c54-4136-478b-9070-c05adc3eff69}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54489/devtoo..., se:cdpVersion: 91.0.4472.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (80a1dc46b28934e3da2da9886376cd7b)] -&gt; xpath: //a[@href=&apos;/Admin/Customer/List&apos;]]
+Session ID: 80a1dc46b28934e3da2da9886376cd7b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:235)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:73)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.crm.qa.pages.HomePage.customersLinkClick(HomePage.java:59)
+	at com.crm.qa.testcases.HomePageTest.customerLinkClickTest(HomePageTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.crm.qa.testcases.HomePageTest#VerifyHomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.crm.qa.testcases.HomePageTest#contactIconClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.crm.qa.testcases.HomePageTest#hmaberugButtonClickTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.crm.qa.testcases.LoginPageTest#ValidateLogoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.crm.qa.testcases.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.crm.qa.testcases.LoginPageTest#validateLoginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

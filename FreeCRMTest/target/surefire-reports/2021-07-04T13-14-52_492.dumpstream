@@ -1,0 +1,4 @@
+# Created at 2021-07-04T13:14:53.010
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Hybdrid Framework\FreeCRMTest\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
